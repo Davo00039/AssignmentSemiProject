@@ -8,6 +8,7 @@ class CartItem{
       $this->product = $product;
       $this->quantity = $quantity;
     }
+    
 
     public function getAmount(){
         return $this->product->getGia() * $this->quantity;
