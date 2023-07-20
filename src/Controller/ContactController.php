@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 class ContactController extends AbstractController
 {
     public function __construct(private UrlGeneratorInterface $urlGenerator)
-        {
+        { 
         }
     #[Route('/contact', name: 'app_contact')]
     public function index(EntityManagerInterface $em, Request $req): Response
